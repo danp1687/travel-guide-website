@@ -1,0 +1,2 @@
+add button at the main page for each country
+add to design document about changing the colours

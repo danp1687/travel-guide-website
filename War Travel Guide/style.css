@@ -1,0 +1,198 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #header{
+        display:flex;
+        justify-content: space-between;
+        background-color:transparent;
+        align-items: center;
+        position: fixed;    
+        width: 100%;
+        padding: 20px;
+        top: 0; 
+        z-index: 1000;
+        transition: background-color 0.3s ease;
+        
+    }
+
+    #header.scrolled {
+        background-color: rgba(0, 0, 0, 0.6 );
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0; 
+    }
+
+    ul li{
+        margin-left: 30px;
+        
+        
+        
+    }
+
+    ul li a:hover{
+        background-color:#36454f;
+        text-decoration:solid;
+        
+    }
+
+    ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 16px 16px;
+            
+    }
+
+    /*IMAGES*
+    /*BACKGROUND IMAGE */
+    .royal-marine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('images/Royal Marine.jpg') center/cover no-repeat;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .auschwitz{
+    
+        max-width: 100%; 
+        max-height: 650px; 
+        display: block; 
+        border: 50px solid #FFFFFF;
+        margin-right: 100px; /* align the text on the right */
+        
+        
+    }
+
+    /*HEADING*/
+    h1{
+        font-size: 64px;
+        font-family: "Special Elite", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-top: 250px;
+        color:white;
+        filter: drop-shadow(10px 10px 10px #000000);
+    }
+
+    h2{
+        font-size: 32px;
+        font-family: "Special Elite", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-align:center;
+        color:black;
+        filter: drop-shadow(10px 10px 10px #000000);
+        padding: auto;
+        margin: 50px;
+        background-color:#708090 ;
+
+    }
+
+    /*SUBHEADING*/
+    .subheading{
+        font-size: 18px;
+        font-family: "Merriweather Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 60px;
+        text-align: center;
+        color:white;
+        filter: drop-shadow(10px 10px 10px #000000);
+    }
+    /*SECTION 2 PAGE 1*/
+    .section2{
+        font-size: 48px;
+        font-family: "Special Elite", system-ui;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 350px;
+        margin-left: 0;
+        padding: 5px;
+        color: black;
+
+    }
+    .small-title{
+        font-size: 16px;
+        font-family: "Merriweather Sans", sans-serif;
+        text-align: left;
+        color:white;
+        margin-right: auto;
+        padding-left: 10px;
+    }
+
+    .menu-item{
+        font-size: 16px;
+        font-family: "Merriweather Sans", sans-serif;
+        text-align: left;
+        color:white;
+    }
+
+    .image-row img {
+        max-width: 100%; /* Ensure images don't exceed 30% of the container's width */
+        border-radius: 20px; /* Adjust the value as needed for smoother edges */
+        width: 450px; /* Set the desired width */
+        height: 300px; /* Set the desired height */
+        object-fit: cover; /* Ensure the image fills the specified size without distortion */
+    }
+
+
+    /*SECTION 2 IMAGES*/ 
+
+    .image-row {
+        display: flex;
+        justify-content: space-around; /* Space out the images evenly */
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+
+    .caption {
+        font-size: 16px;
+        font-family: "Merriweather Sans", sans-serif;
+        text-align: center;
+        margin-top: 5px; /* Space between image and caption */
+
+    }
+
+    /* BUTTON PAGE 1 */
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 40px;
+        font-family: "Merriweather Sans", sans-serif;
+        font-size: 20px;
+        color: white;
+        background-color: #708090; /* Background color */
+        border: none; /* Remove borders */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline from link */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+
+    .button:hover {
+        background-color: #000000; /* Darker background on hover */
+        color:#FFFFFF;
+    }
+
+    .button:focus {
+        outline: none; /* Remove the default focus outline */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow when focused */
+    }
+
+    /*MADE THE BUTTON CENTRED YKWIS */
+    .image-container {
+        text-align: center; 
+    }
